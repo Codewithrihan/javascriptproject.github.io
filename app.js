@@ -103,8 +103,8 @@ function download() {
     doc.text(100, 155, 'Marital Status : ' + ms.value);
     doc.line(10, 170, 200, 170) // horizontal line
 
-    doc.text(20, 170, 'Career Objective');
-    doc.text(20, 180, 'To make a career with an esteemed organization by contributing my hard work \r\n to achieve its goals and objective.');
+    doc.text(20, 180, 'Career Objective');
+    doc.text(20, 190, 'To make a career with an esteemed organization by contributing my hard work \r\n to achieve its goals and objective.');
 
     // Save the PDF
     doc.save('document.pdf');

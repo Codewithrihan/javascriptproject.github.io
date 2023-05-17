@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Resume Making</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- partial:index.partial.html -->
+    <title>website for free</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+
+    <h3 class="w3-xxlarge w3-center">Resume builder</h3>
+
+   
+      <table cellspacing="2" class="w3-large w3-padding"align="center" cellpadding="8" border="0">
+        <tr>
+          <td>Name</td>
+          <td><input type="text" id="fullname" placeholder="Enter your Name" /></td>
+        </tr>
+        <tr>
+          <td>Father Name</td>
+          <td><input type="text" id="fname" placeholder="Enter your Father Name" /></td>
+        </tr>
+        <tr>
+          <td>DOB</td>
+          <td><input type="date" class="dob" id="date" /></td>
+        </tr>
+        <tr>
+          <td>Phone</td>
+          <td><input type="number" id="phone" maxlength="10" data-toggle="popover"
+            data-trigger="hover"
+            data-content="10 digits only"
+            placeholder="Phone no"
+            /></td>
+        </tr>
+        <tr>
+          <td>Email</td>
+          <td><input type="email" id="email"  placeholder="example@mail.com" required /></td>
+        </tr>
+        <tr>
+          <td>Address</td>
+          <td><textarea name="Address" class="add" id="add" placeholder=" example : 285, Rajapark, jaipur 302004 " maxlength="50" cols="21" rows="3"></textarea></td>
+        </tr>
+        <tr>
+          <td>Experience</td>
+          <td>
+            <select size="1"name="d1" id="exp" class="exp">
+            <option>Fresher</option>
+            <option> 1-3 Years</option>
+            <option> 3-5 Years</option>
+            <option> 5-7 Years </option>
+          </select> </td>
+        </tr>
+        <tr>
+          <td>QUALIFICATION <br /><br /><br /><br /><br /><br /><br /></td>
+           
+          <td>
+          <table>
+           
+          <tr>
+          <td align="center"><b>Sl.No.</b></td>
+          <td align="center"><b>Examination</b></td>
+          <td align="center"><b>Board</b></td>
+          <td align="center"><b>Percentage</b></td>
+          <td align="center"><b>Year of Passing</b></td>
+          </tr>
+           
+          <tr>
+          <td>1</td>
+          <td>Class X</td>
+          <td><input type="text" name="ClassX_Board" maxlength="15" id="board"  /></td>
+          <td><input type="text" name="ClassX_Percentage" maxlength="15" id="percentage" /></td>
+          <td><input type="text" name="ClassX_YrOfPassing" maxlength="15" id="passing"/></td>
+          </tr>
+           
+          <tr>
+          <td>2</td>
+          <td>Class XII</td>
+          <td><input type="text" name="ClassXII_Board" maxlength="30" /></td>
+          <td><input type="text" name="ClassXII_Percentage" maxlength="30" /></td>
+          <td><input type="text" name="ClassXII_YrOfPassing" maxlength="30" /></td>
+          </tr>
+           
+          <tr>
+          <td>3</td>
+          <td>Graduation</td>
+          <td><input type="text" name="Graduation_Board" maxlength="30" /></td>
+          <td><input type="text" name="Graduation_Percentage" maxlength="30" /></td>
+          <td><input type="text" name="Graduation_YrOfPassing" maxlength="30" /></td>
+          </tr>
+           
+          <tr>
+          <td>4</td>
+          <td>Masters</td>
+          <td><input type="text" name="Masters_Board" maxlength="30" /></td>
+          <td><input type="text" name="Masters_Percentage" maxlength="30" /></td>
+          <td><input type="text" name="Masters_YrOfPassing" maxlength="30" /></td>
+          </tr>
+           
+          <tr>
+          <td></td>
+          <td></td>
+          </tr>
+          </table>
+           
+          </td>
+          </tr>
+           
+    <tr>
+      <td>language</td>
+      <td> 
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">Hindi</label>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">English</label>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="javascript">Hindi/English(Both)</label>    
+    </td>
+    </tr>
+    <tr>
+      <td>Marital Status</td>
+      <td>
+        <select size="1"name="d1" id="ms" class="exp">
+        <option>Single</option>
+        <option>Married</option>
+        <option>Widowed</option>
+        <option>Separated</option>
+        <option>Divorced</option>
+      </select> </td>
+    </tr>
+    </tr>
+    
+        </table>
+
+     
+      <input
+        type="submit"
+        class="w3-btn w3-green w3-round w3-ripple"
+        value="Download Resume"
+        onclick="download()"
+      />
+      <br />
+      <br />
+      
+    <script src="app.js"></script>
+    <!-- partial -->
+  </body>
+</html>

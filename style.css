@@ -1,0 +1,18 @@
+body {
+  align-items: center;
+  background-color: whitesmoke;
+  text-align: center;
+}
+.dob {
+  padding: 1px 40px;
+}
+.qualifaction {
+  resize: none;
+}
+.add {
+  resize: none;
+}
+.exp {
+  padding: 1px 72px;
+}
+
